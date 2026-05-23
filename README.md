@@ -1,14 +1,7 @@
 # Anush Adhikari Portfolio
 
-A modern developer portfolio built with React, Vite, and Tailwind CSS, redesigned with a dark theme and yellow accent to showcase my projects, skills, education, and experience.
+A modern portfolio built with React, Vite, and Tailwind CSS, redesigned with a dark theme and yellow accent to showcase my projects, skills, education, and experience.
 
-## Live Demo
-[View Portfolio](https://your-live-link-here)
-
-## Preview
-Add a screenshot here later, for example:
-
-![Portfolio Preview](./public/preview.png)
 
 ## Tech Stack
 - React
@@ -26,18 +19,6 @@ Add a screenshot here later, for example:
 - Contact panel with GitHub, LinkedIn, email, and resume links
 - Theme toggle support
 
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
 
 ## Project Structure
 
@@ -50,12 +31,7 @@ src/
 public/
 ```
 
-## Customization
-- Update personal details inside the component files in `src/components/`
-- Place your resume in `public/resume.pdf`
-- Add your preview image to `public/preview.png`
-
 ## Contact
 - GitHub: [AnushAdhikari](https://github.com/AnushAdhikari)
 - LinkedIn: [Anush Adhikari](https://www.linkedin.com/)
-- Email: your-email@example.com
+- Email: xettrianush@gmail.com
