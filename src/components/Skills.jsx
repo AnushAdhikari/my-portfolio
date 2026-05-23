@@ -7,6 +7,7 @@ import {
 import { SiTailwindcss, SiMysql, SiWebpack, SiShopify } from 'react-icons/si'
 import { MdApi } from 'react-icons/md'
 import { SiNextdotjs } from "@icons-pack/react-simple-icons";
+import { SiSupabase } from "react-icons/si";
 
 
 
@@ -34,6 +35,7 @@ const CATEGORIES = [
       { name: 'MySQL',    icon: <SiMysql    className="text-[#4479A1]" /> },
       { name: 'Oracle', icon: <FaDatabase className="text-[#F80000]" /> },
       { name: 'SQL',      icon: <FaDatabase className="text-yellow-500" /> },
+      { name: 'Supabase', icon: <SiSupabase className="text-[#3ECF8E]" /> },
     ],
   },
   {
