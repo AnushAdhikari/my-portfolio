@@ -6,6 +6,9 @@ import {
 } from 'react-icons/fa'
 import { SiTailwindcss, SiMysql, SiWebpack, SiShopify } from 'react-icons/si'
 import { MdApi } from 'react-icons/md'
+import { SiNextdotjs } from "@icons-pack/react-simple-icons";
+
+
 
 const CATEGORIES = [
   {
@@ -13,6 +16,7 @@ const CATEGORIES = [
     icon: <FaReact className="text-[#339933]" />,
     skills: [
       { name: 'React.js',          icon: <FaReact       className="text-[#61DAFB]" /> },
+      { name: 'Next.js', icon: <SiNextdotjs className="text-black dark:text-white" /> },
       { name: 'JavaScript (ES6+)', icon: <FaJs          className="text-[#F7DF1E]" /> },
       { name: 'HTML5',             icon: <FaHtml5       className="text-[#E34F26]" /> },
       { name: 'CSS3',              icon: <FaCss3Alt     className="text-[#1572B6]" /> },
