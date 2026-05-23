@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ─────────────────────────────────────────────── */
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+body {
+  @apply font-sans antialiased;
+  @apply bg-white text-zinc-900;
+  @apply dark:bg-[#08080c] dark:text-zinc-100;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* ─── Scrollbar ─────────────────────────────────────────── */
+* { scrollbar-width: thin; scrollbar-color: #facc15 transparent; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { background: #facc15; border-radius: 9999px; }
+
+/* ─── Scroll-reveal ─────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Section layout ────────────────────────────────────── */
+.shell { @apply max-w-7xl mx-auto px-5 sm:px-8 lg:px-14; }
+
+/* ─── Glass card ────────────────────────────────────────── */
+.glass {
+  @apply bg-white/70 dark:bg-white/[0.04];
+  @apply border border-black/[0.06] dark:border-white/[0.08];
+  @apply backdrop-blur-xl;
+}
+
+/* ─── Hero gradient overlay ─────────────────────────────── */
+.hero-mask {
+  background:
+    linear-gradient(105deg,
+      rgba(8,8,12,0.96) 0%,
+      rgba(8,8,12,0.82) 42%,
+      rgba(8,8,12,0.55) 65%,
+      rgba(8,8,12,0.90) 100%
+    ),
+    radial-gradient(ellipse 55% 60% at 78% 28%, rgba(250,204,21,0.22), transparent);
+}
+
+/* ─── Timeline ──────────────────────────────────────────── */
+.tl-dot {
+  @apply absolute left-0 top-1 flex h-6 w-6 items-center justify-center;
+  @apply rounded-full border border-yellow-400/50 bg-yellow-400/20 text-yellow-400 text-[10px];
+}
+.tl-line {
+  position: relative;
+  padding-left: 2.25rem;
+}
+.tl-line::before {
+  content: '';
+  position: absolute;
+  left: 11px; top: 1.75rem; bottom: -1.5rem;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(250,204,21,0.6), rgba(250,204,21,0.0));
+}
+
+/* ─── Tag chip ──────────────────────────────────────────── */
+.chip {
+  @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1;
+  @apply text-xs font-semibold uppercase tracking-[0.2em];
+  @apply bg-yellow-400/15 text-yellow-600 dark:text-yellow-400;
+}
+
+/* ─── Button ────────────────────────────────────────────── */
+.btn {
+  @apply inline-flex items-center gap-2 rounded-full px-5 h-11;
+  @apply text-sm font-semibold transition-all duration-200;
+}
+.btn-yellow { @apply bg-yellow-400 text-zinc-950 hover:bg-yellow-300; }
+.btn-ghost  { @apply border border-white/25 text-white hover:bg-white/10; }
+.btn-dark   { @apply bg-zinc-900 text-white hover:bg-black dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200; }
+.btn-blue   { @apply bg-[#0A66C2] text-white hover:bg-[#0958a8]; }
+
+/* ─── Section eyebrow ───────────────────────────────────── */
+.eyebrow { @apply text-xs font-bold uppercase tracking-[0.38em] text-yellow-500; }
