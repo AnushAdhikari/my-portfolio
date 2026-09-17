@@ -153,11 +153,46 @@ export default function Home() {
     </div>
 
     {/* Social icons */}
-    <div style={{ position:'absolute', top:20, right:20, display:'flex', gap:10, color:'rgba(255,255,255,0.7)', fontSize:18 }}>
-      <a href="https://github.com/AnushAdhikari" target="_blank" rel="noreferrer" style={{ color:'black' }}><FaGithub /></a>
-      <a href="https://www.linkedin.com/in/anush-adhikari-073196218/" target="_blank" rel="noreferrer" style={{ color:'black' }}><FaLinkedin /></a>
-      <a href="mailto:xettrianush@gmail.com" style={{ color:'black' }}><HiOutlineMail /></a>
-    </div>
+ <div
+  style={{
+    position: 'absolute',
+    top: 20,
+    right: 20,
+    display: 'flex',
+    gap: 14,
+    fontSize: 22,
+    zIndex: 10,
+    pointerEvents: 'auto',
+  }}
+>
+  <a
+    href="https://github.com/AnushAdhikari"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Visit my GitHub profile"
+    className="social-icon github-icon"
+  >
+    <FaGithub />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/anush-adhikari-073196218/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Visit my LinkedIn profile"
+    className="social-icon linkedin-icon"
+  >
+    <FaLinkedin />
+  </a>
+
+  <a
+    href="mailto:xettrianush@gmail.com"
+    aria-label="Email me"
+    className="social-icon email-icon"
+  >
+    <HiOutlineMail />
+  </a>
+</div>
 
     {/* Yellow glow */}
     <div style={{ position:'absolute', inset:0, background:'radial-gradient(circle at 75% 18%, rgba(250,204,21,0.18), transparent 38%)' }} />
