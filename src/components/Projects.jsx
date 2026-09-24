@@ -1,11 +1,13 @@
+
 import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa'
+// import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const PROJECTS = [
   {
-    tag:   'SEO · Analytics · AI',
+    tag: 'SEO · Analytics · AI',
     title: 'AI-Enhanced E-commerce Growth Workflows',
-    desc:  'A case study built from real Amazon SEO and FBA work such as, AI-assisted keyword research, multilingual listing localisation, and ROAS-led optimisation across European Amazon markets (DE/FR/ES/IT).',
+    desc: 'A case study built from real Amazon SEO and FBA work such as, AI-assisted keyword research, multilingual listing localisation, and ROAS-led optimisation across European Amazon markets (DE/FR/ES/IT).',
     bullets: [
       'AI keyword research across 4 international markets',
       'Demand forecasting from multi-week impression data',
@@ -15,9 +17,9 @@ const PROJECTS = [
     accent: 'from-yellow-400/20 to-yellow-400/0',
   },
   {
-    tag:   'React · Tailwind · REST APIs',
+    tag: 'React · Tailwind · REST APIs',
     title: 'High-Performance Responsive Interfaces',
-    desc:  'Production front-end work from BigO Information Technology such as, React.js and Tailwind CSS builds with a 30% load-time reduction, REST API integration, and component-driven architecture maintained across 50+ reviewed PRs per sprint.',
+    desc: 'Production front-end work from BigO Information Technology such as, React.js and Tailwind CSS builds with a 30% load-time reduction, REST API integration, and component-driven architecture maintained across 50+ reviewed PRs per sprint.',
     bullets: [
       'Component-driven React architecture',
       'Lazy loading & code splitting (–30% load time)',
@@ -27,9 +29,9 @@ const PROJECTS = [
     accent: 'from-blue-400/20 to-blue-400/0',
   },
   {
-    tag:   'Shopify · Liquid · UX',
+    tag: 'Shopify · Liquid · UX',
     title: 'Shopify Storefront Customisation',
-    desc:  'End-to-end Shopify development at Cartmade E-Commerce such as, Liquid templating, mobile-responsive storefront designs, performance tuning, accessibility improvements, and client-facing requirements gathering.',
+    desc: 'End-to-end Shopify development at Cartmade E-Commerce such as, Liquid templating, mobile-responsive storefront designs, performance tuning, accessibility improvements, and client-facing requirements gathering.',
     bullets: [
       'Shopify Liquid custom theme development',
       'Mobile-first conversion-focused UX',
@@ -39,44 +41,56 @@ const PROJECTS = [
     accent: 'from-emerald-400/20 to-emerald-400/0',
   },
   {
-  tag:   'PHP · MySQL · Bootstrap',
-  title: 'Full-Stack Cloth Rental Web App (2022)',
-  desc:  'Built entirely from scratch without AI tools as my Bachelor\'s Final Year Project in 2022. An end-to-end rental e-commerce platform with a customer-facing storefront, session-based cart with rental date pricing, Khalti payment integration, and a full admin panel for product and category management.',
-  bullets: [
-    'Custom PHP authentication with bcrypt password hashing',
-    'Dynamic rental pricing calculated by delivery and return dates',
-    'Admin CRUD panel for products, categories, and inventory',
-    'Peer-to-peer "Earn Through Us" cloth submission feature',
-    'AJAX-powered live search and wishlist functionality',
-    'Khalti payment gateway integration at checkout',
-  ],
-  accent: 'from-violet-400/20 to-violet-400/0',
-},
-{
-  tag: 'C# · WinForms · OOP',
-  title: 'Ticketing System (2021)',
-  desc: 'A desktop application built in C# using object-oriented principles to manage visitor records at a recreation center. Features a secure login system, dynamic pricing engine, and real-time reporting with weekly charts.',
-  bullets: [
-    'Visitor check-in/check-out with auto-calculated duration and pricing',
-    'Dynamic pricing engine based on age group, group size, and weekday vs weekend',
-    'Weekly earnings and visitor count reports with data grid visualizations',
-    'JSON-based file persistence using Newtonsoft.Json for data storage',
-  ],
-  accent: 'from-blue-400/20 to-blue-400/0',
-},
-{
-  tag: 'Next.js · Supabase · Tailwind ',
-  title: 'Recreation Center Ticketing System (Web, 2026)',
-  desc: 'A full-stack web rebuild of the original C# desktop app, accessible on any device. Features a real-time PostgreSQL database, dynamic billing engine, and weekly analytics with interactive charts.',
-  bullets: [
-    'Full-stack Next.js app with Supabase PostgreSQL backend',
-    'Real-time visitor check-in/check-out with automatic price calculation',
-    'Weekday vs weekend and age-group-based dynamic pricing matrix',
-    'Weekly earnings and visitor reports with Recharts bar charts',
-  ],
-  accent: 'from-cyan-400/20 to-cyan-400/0',
-},
-
+    tag: 'PHP · MySQL · Bootstrap',
+    title: 'Full-Stack Cloth Rental Web App (2022)',
+    desc: 'Built entirely from scratch without AI tools as my Bachelor\'s Final Year Project in 2022. An end-to-end rental e-commerce platform with a customer-facing storefront, session-based cart with rental date pricing, Khalti payment integration, and a full admin panel for product and category management.',
+    bullets: [
+      'Custom PHP authentication with bcrypt password hashing',
+      'Dynamic rental pricing calculated by delivery and return dates',
+      'Admin CRUD panel for products, categories, and inventory',
+      'Peer-to-peer "Earn Through Us" cloth submission feature',
+      'AJAX-powered live search and wishlist functionality',
+      'Khalti payment gateway integration at checkout',
+    ],
+    accent: 'from-violet-400/20 to-violet-400/0',
+  },
+  {
+    tag: 'C# · WinForms · OOP',
+    title: 'Ticketing System (2021)',
+    desc: 'A desktop application built in C# using object-oriented principles to manage visitor records at a recreation center. Features a secure login system, dynamic pricing engine, and real-time reporting with weekly charts.',
+    bullets: [
+      'Visitor check-in/check-out with auto-calculated duration and pricing',
+      'Dynamic pricing engine based on age group, group size, and weekday vs weekend',
+      'Weekly earnings and visitor count reports with data grid visualizations',
+      'JSON-based file persistence using Newtonsoft.Json for data storage',
+    ],
+    accent: 'from-blue-400/20 to-blue-400/0',
+  },
+  {
+    tag: 'Next.js · Supabase · Tailwind ',
+    title: 'Recreation Center Ticketing System (Web, 2026)',
+    desc: 'A full-stack web rebuild of the original C# desktop app, accessible on any device. Features a real-time PostgreSQL database, dynamic billing engine, and weekly analytics with interactive charts.',
+    bullets: [
+      'Full-stack Next.js app with Supabase PostgreSQL backend',
+      'Real-time visitor check-in/check-out with automatic price calculation',
+      'Weekday vs weekend and age-group-based dynamic pricing matrix',
+      'Weekly earnings and visitor reports with Recharts bar charts',
+    ],
+    accent: 'from-cyan-400/20 to-cyan-400/0',
+  },
+  {
+    tag: 'React · Vite · JavaScript · OpenWeatherMap API',
+    title: 'WeatherApp (Web, 2026)',
+    desc: 'A responsive weather application that provides real-time weather information for cities around the world. Users can search by city, use their current location, and switch between Celsius and Fahrenheit.',
+    bullets: [
+      'Search current weather by city name using the OpenWeatherMap API',
+      'Use browser geolocation to view weather for the current location',
+      'Switch between Celsius and Fahrenheit temperature units',
+      'View humidity, wind speed, pressure, visibility, sunrise, and sunset',
+    ],
+    accent: 'from-blue-400/20 to-blue-400/0',
+    liveUrl: 'https://weatherapp-omega-peach.vercel.app',
+  },
 
 ]
 
@@ -122,6 +136,16 @@ export default function Projects() {
                 >
                   View details <FaExternalLinkAlt className="text-[10px]" />
                 </a> */}
+                {p.liveUrl && (
+                  <a
+                    href={p.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-6 inline-flex items-center gap-1.5 text-xs font-semibold text-yellow-500 transition hover:text-yellow-400"
+                  >
+                    View live project <FaExternalLinkAlt className="text-[10px]" />
+                  </a>
+                )}
               </div>
             </article>
           ))}
