@@ -199,7 +199,7 @@ export default function Home() {
 
     {/* Bottom info */}
     <div style={{ position:'absolute', left:16, right:16, bottom:16, borderRadius:'1.5rem', border:'1px solid rgba(255,255,255,0.1)', background:'rgba(0,0,0,0.5)', padding:20, backdropFilter:'blur(12px)' }}>
-      <p style={{ fontSize:10, fontWeight:'bold', textTransform:'uppercase', letterSpacing:'0.28em', color:'#facc15', marginBottom:10 }}>Current focus</p>
+      <p style={{ fontSize:10, fontWeight:'bold', textTransform:'uppercase', letterSpacing:'0.28em', color:'#ff0000', marginBottom:10 }}>Current focus</p>
       {/* <p style={{ fontSize:18, fontWeight:'bold', lineHeight:1.3 }}>React · AI/ML · Web Performance</p> */}
       <p style={{ marginTop:10, fontSize:12, lineHeight:1.6, color:'#a1a1aa' }}>
         Blending front-end engineering, e-commerce strategy, and data-informed product thinking.
